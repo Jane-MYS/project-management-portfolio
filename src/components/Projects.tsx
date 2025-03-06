@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -48,17 +49,19 @@ export const projectsData = [
     methodologies: "Agile (Scrum), risk management, cost optimization, and stakeholder communication."
   },
   {
-    title: "Advance Academy – Transfer Application Counseling",
-    description: "Co-led transfer application counseling with a 90% success rate in students meeting deadlines, while increasing program engagement by 25%.",
-    category: "Program Manager",
+    title: "Transfer Application Counseling Program",
+    description: "Designed and managed a transfer application counseling program to support students applying to four-year universities, ensuring they navigated the process effectively.",
+    category: "Advance Academy",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     fullDescription: [
-      "Applied Agile principles, utilizing regular feedback loops to adapt to student needs and optimize program offerings for the Transfer Application Counseling Program.",
-      "Co-led transfer application counseling with a 90% success rate in students meeting deadlines."
+      "Designed and managed a transfer application counseling program at Advance Academy from August 2019 to April 2020, supporting students applying to four-year universities.",
+      "Applied Agile principles, utilizing regular feedback loops to adapt to student needs and optimize program offerings."
     ],
-    challenges: "Addressing enrollment challenges while providing personalized counseling services that met the diverse needs of transfer applicants.",
-    solutions: "Organized monthly workshops to improve engagement and implemented a risk management framework to address enrollment challenges.",
-    results: "Improved engagement by 25%, increased inquiries by 20% through digital marketing campaigns, and achieved a 90% enrollment rate through personalized outreach."
+    challenges: "Students often faced unclear application requirements, tight deadlines, and limited guidance, leading to missed opportunities. Additionally, enrollment fluctuations and limited awareness impacted program reach.",
+    solutions: "Implemented structured counseling sessions, personalized transfer roadmaps, and deadline tracking systems. Organized monthly workshops to boost engagement and implemented a risk management framework to mitigate enrollment challenges. Launched digital marketing campaigns and executed personalized outreach strategies.",
+    results: "Increased workshop engagement by 25%, boosted inquiries by 20%, achieved a 90% enrollment rate, and improved contract fulfillment by 15%. Additionally, 90% of students met application deadlines, improving application completion and acceptance rates.",
+    technologies: "Google Workspace, Smartsheet (tracking & reporting), Trello (task management), Zoom (virtual counseling), CRM tools, and digital marketing platforms.",
+    methodologies: "Agile program management, risk management, student-centered advising, and process optimization."
   },
   {
     title: "BMW China – New Model Launch",
