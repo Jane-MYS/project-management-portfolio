@@ -57,7 +57,7 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto">
         <h2 
           ref={titleRef}
-          className="text-3xl md:text-4xl font-medium text-center mb-12 opacity-0"
+          className="text-3xl md:text-4xl font-medium text-center mb-12 opacity-0 mx-auto"
         >
           Let's Connect
         </h2>
