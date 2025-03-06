@@ -45,10 +45,10 @@ const Hero = () => {
           Project Management Portfolio
         </p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight md:leading-tight lg:leading-tight mb-6">
-          Bringing vision to reality through <span className="relative inline-block">meticulous<span className="absolute -bottom-1 left-0 w-full h-[1px] bg-foreground"></span></span> project management
+          Delivering <span className="relative inline-block">exceptional<span className="absolute -bottom-1 left-0 w-full h-[1px] bg-foreground"></span></span> results through strategic project management
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-          Transforming complex challenges into delivered results with a focus on clarity, efficiency, and excellence.
+          Results-driven Project Manager with 8+ years of experience in technology and higher education sectors, specializing in Agile, Waterfall, and Lean methodologies.
         </p>
         
         <div 

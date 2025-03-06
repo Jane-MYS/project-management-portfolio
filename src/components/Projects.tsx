@@ -4,82 +4,82 @@ import ProjectCard from './ProjectCard';
 
 export const projectsData = [
   {
-    title: "Enterprise Digital Transformation",
-    description: "Led a comprehensive digital transformation initiative for a Fortune 500 company, streamlining operations and increasing efficiency by 35%.",
-    category: "Digital Transformation",
+    title: "TransferBot – AI-Powered Support",
+    description: "Founded and led the development of TransferBot, an AI-powered Discord chatbot designed to support California community college students in their transfer process.",
+    category: "Founder & Developer",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     fullDescription: [
-      "This enterprise-wide initiative focused on modernizing legacy systems and implementing new digital workflows across the organization. The project spanned 18 months and involved coordinating with stakeholders from multiple departments.",
-      "As the lead project manager, I was responsible for establishing project governance, managing the budget of $2.5M, and ensuring alignment with strategic business objectives."
+      "Founded and led the development of TransferBot, an AI-powered Discord chatbot designed to support California community college students in their transfer process to UC, CSU, and private universities.",
+      "Trained AI bot to provide academic advising features, covering UC Transfer Admission Guarantee (TAG), CSU ADT pathways, and IGETC certification."
     ],
-    challenges: "The biggest challenge was managing resistance to change from long-term employees and integrating new systems with critical legacy infrastructure without disrupting ongoing operations.",
-    solutions: "We implemented a phased approach with extensive change management procedures, including personalized training programs and dedicated support teams for each department during transition phases.",
-    results: "The transformation resulted in a 35% increase in operational efficiency, $1.2M in annual cost savings, and significantly improved customer satisfaction scores from 72% to 89%."
+    challenges: "Creating an accessible, user-friendly platform that could accurately provide complex transfer information specific to California's higher education systems.",
+    solutions: "Built personalized study & transfer planning tools, offering tailored pathways based on majors and target universities, making the service accessible and free to all students.",
+    results: "Successfully launched an AI chatbot that helps community college students navigate the complex transfer process, improving accessibility to critical transfer information."
   },
   {
-    title: "Global Software Implementation",
-    description: "Managed the worldwide rollout of an ERP system across 12 countries, coordinating teams across multiple time zones and cultures.",
-    category: "Software Implementation",
+    title: "PMI Delaware Valley Chapter",
+    description: "Managed a 6-month document migration to Google Shared Drive, improving access by 30% and establishing an efficient folder hierarchy with proper access controls.",
+    category: "Project Manager (Volunteer)",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     fullDescription: [
-      "This global implementation project involved deploying a unified ERP solution across 12 countries in Europe, Asia, and North America, replacing 8 different legacy systems.",
-      "The project required coordinating with 15 cross-functional teams operating in different time zones and managing cultural differences in workflow processes and compliance requirements."
+      "Applied Waterfall methodology with defined phases for planning, migration, training, and final review to ensure structured implementation of the Google Workspace Migration.",
+      "Managed a 6-month document migration to Google Shared Drive, improving access by 30% and establishing a folder hierarchy."
     ],
-    challenges: "Coordinating implementation across multiple regions with different regulatory requirements and business practices while maintaining a consistent core system presented significant challenges.",
-    solutions: "We established a global governance framework with regional implementation teams, standardized core processes while allowing for necessary local adaptations, and created a 24/7 support structure.",
-    results: "Successfully delivered the project on schedule and 8% under budget, resulting in standardized reporting, improved data visibility, and consolidated operations that reduced monthly closing times from 12 days to 3 days."
+    challenges: "Coordinating a volunteer-based project team while ensuring proper document organization, access control, and user adoption across the chapter.",
+    solutions: "Defined access permissions, created drive management protocols, and delivered comprehensive training to members to ensure smooth transition and adoption.",
+    results: "Achieved 80% user adoption within the first month, significantly improved document accessibility, and established sustainable document management practices for the chapter."
   },
   {
-    title: "Agile Transformation Initiative",
-    description: "Guided an organization of 200+ staff through an agile transformation, developing new workflows and facilitating cultural change.",
-    category: "Methodology Transformation",
+    title: "Santa Monica College Tutoring Program",
+    description: "Designed and delivered engaging training programs for over 50 tutors, establishing a virtual platform with resources for over 1,000 users.",
+    category: "Tutoring Coordinator",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
     fullDescription: [
-      "This organization-wide initiative transformed a traditional waterfall development environment into an agile framework, affecting over 200 team members across product development, QA, operations, and customer support.",
-      "As transformation lead, I designed and implemented the transition roadmap, established agile practices, and created a measurement framework to track improvements in delivery speed and quality."
+      "Designed and delivered engaging in-person and virtual training programs for over 50 new hire tutors, creating materials that equipped them with essential methodologies and problem-solving skills.",
+      "Led interactive group training sessions (5-10 tutors), fostering collaboration and knowledge sharing, resulting in high satisfaction ratings and demonstrating the effectiveness of the training approach."
     ],
-    challenges: "The organization had deeply entrenched waterfall methodologies, siloed departments with minimal cross-functional collaboration, and management concerns about potential productivity disruptions during transition.",
-    solutions: "We implemented a hybrid approach beginning with pilot teams, developed custom workshops for different departments, and created an Agile Center of Excellence to support teams through the transition.",
-    results: "Reduced time-to-market for new features by 60%, increased release frequency from quarterly to bi-weekly, and improved team engagement scores by 42%."
+    challenges: "Transitioning to and maintaining effective tutoring services in both in-person and virtual environments while ensuring consistent quality of tutor training.",
+    solutions: "Established the MLTC virtual platform with extensive resources and implemented standardized protocols for virtual onboarding and communication.",
+    results: "Facilitated smooth adoption by over 1,000 users, enhanced accessibility to tutoring services, and implemented workflow optimizations across multiple departments within three months."
   },
   {
-    title: "Product Launch Campaign",
-    description: "Orchestrated the launch of a flagship product, coordinating marketing, sales, and technical teams to exceed revenue targets by 28%.",
-    category: "Product Management",
+    title: "Redux Reimagine LLC – AI-Enhanced Smart Trash Can",
+    description: "Managed a team of 5 engineers in AI-driven software development, achieving 85% classification accuracy while reducing costs by 15%.",
+    category: "Project Manager",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     fullDescription: [
-      "This comprehensive product launch involved bringing a new SaaS platform to market, including coordinating product development milestones, marketing campaign creation, sales enablement, and customer support preparation.",
-      "I led cross-functional teams through a 6-month launch process, managing dependencies between technical development, marketing content creation, and go-to-market strategy execution."
+      "Utilized Scrum methodology with sprint planning and reviews, improving team alignment and achieving deliverables on time for AI-Enhanced Smart Trash Can development.",
+      "Managed a team of 5 engineers in AI-driven software development, achieving 85% classification accuracy."
     ],
-    challenges: "Tight timeline constraints, last-minute feature changes based on competitor analysis, and aligning messaging across different channels and market segments proved challenging.",
-    solutions: "Implemented an integrated launch plan with clear stage gates, created flexible content templates that could adapt to feature changes, and established daily stand-ups in the final launch phase.",
-    results: "Exceeded first-quarter revenue targets by 28%, achieved 112% of the lead generation goal, and secured coverage in 15 industry publications, establishing the product as a category leader."
+    challenges: "Developing advanced AI classification systems with limited funding during COVID-19 while maintaining project momentum and technical quality.",
+    solutions: "Oversaw budget allocation, achieving a 15% cost reduction by optimizing resources and vendor contracts. Utilized structured risk management to mitigate impacts from limited funding.",
+    results: "Successfully delivered AI software with 85% classification accuracy while maintaining budget discipline and producing comprehensive documentation for investor updates."
   },
   {
-    title: "Infrastructure Modernization",
-    description: "Spearheaded a critical infrastructure upgrade project, migrating legacy systems to cloud architecture with zero downtime.",
-    category: "IT Infrastructure",
+    title: "Advance Academy – Transfer Application Counseling",
+    description: "Co-led transfer application counseling with a 90% success rate in students meeting deadlines, while increasing program engagement by 25%.",
+    category: "Program Manager",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     fullDescription: [
-      "This project involved migrating mission-critical applications and data from on-premises legacy infrastructure to a cloud-based architecture while maintaining 24/7 operations for a financial services company.",
-      "I was responsible for planning and executing the migration strategy, ensuring security compliance, managing the $3.2M budget, and coordinating with vendors and internal IT teams."
+      "Applied Agile principles, utilizing regular feedback loops to adapt to student needs and optimize program offerings for the Transfer Application Counseling Program.",
+      "Co-led transfer application counseling with a 90% success rate in students meeting deadlines."
     ],
-    challenges: "The legacy systems had minimal documentation, required 99.99% uptime during transition, and needed to meet strict financial industry regulatory requirements in the new environment.",
-    solutions: "Developed a parallel implementation strategy with automated testing, implemented a traffic routing system for seamless cutover, and created comprehensive documentation for the new architecture.",
-    results: "Completed the migration with zero downtime, reduced infrastructure costs by 42%, improved system performance by 65%, and established a more scalable and resilient architecture."
+    challenges: "Addressing enrollment challenges while providing personalized counseling services that met the diverse needs of transfer applicants.",
+    solutions: "Organized monthly workshops to improve engagement and implemented a risk management framework to address enrollment challenges.",
+    results: "Improved engagement by 25%, increased inquiries by 20% through digital marketing campaigns, and achieved a 90% enrollment rate through personalized outreach."
   },
   {
-    title: "Regulatory Compliance Initiative",
-    description: "Led a cross-functional team to implement new regulatory requirements, ensuring full compliance ahead of deadline and avoiding potential penalties.",
-    category: "Compliance & Governance",
+    title: "BMW China – New Model Launch",
+    description: "Supported the launch of a new BMW model's paint shop, coordinating with 500 employees and reducing defects by 10%.",
+    category: "Project Intern",
     image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
     fullDescription: [
-      "This critical initiative ensured organizational compliance with new industry regulations affecting data protection, customer privacy, and reporting requirements across multiple business units.",
-      "I led a team of legal, IT, and business process experts to analyze requirements, implement necessary changes to systems and processes, and develop training programs for employees."
+      "Employed Lean methodology focused on quality improvement and waste reduction to enhance process efficiency for the Paint Shop Setup project.",
+      "Supported the launch of a new BMW model's paint shop, coordinating with 500 employees to meet milestones, improving schedule adherence by 15%."
     ],
-    challenges: "The regulations contained ambiguous requirements requiring legal interpretation, affected multiple legacy systems with complex interdependencies, and had an aggressive compliance deadline.",
-    solutions: "Established a dedicated compliance task force, developed a requirements traceability matrix, and implemented a phased approach prioritizing high-risk areas first.",
-    results: "Achieved full compliance two months ahead of the deadline, passed external audit with zero findings, and established ongoing compliance monitoring processes that reduced future regulatory risk."
+    challenges: "Coordinating with a large workforce of 500 employees while implementing quality control systems in a high-precision manufacturing environment.",
+    solutions: "Assisted in implementing quality control systems and developed SOPs to streamline operations and onboarding processes.",
+    results: "Reduced defects by 10%, improved schedule adherence by 15%, and reduced onboarding time by 20% through effective SOP development."
   }
 ];
 
@@ -123,13 +123,13 @@ const Projects = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl font-medium mb-6 opacity-0"
           >
-            Featured Projects
+            Project Experience
           </h2>
           <p 
             ref={descriptionRef}
             className="text-lg text-muted-foreground opacity-0 animation-delay-200"
           >
-            A selection of key projects that demonstrate my approach to project management, problem-solving, and delivering exceptional results.
+            A selection of key projects that demonstrate my approach to project management, problem-solving, and delivering exceptional results across diverse industries.
           </p>
         </div>
 

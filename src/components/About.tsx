@@ -3,16 +3,16 @@ import React, { useRef, useEffect } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
 const skills = [
-  "Agile & Waterfall Methodologies",
   "Risk Management",
-  "Stakeholder Communication",
+  "Agile & Waterfall Methodologies",
   "Budget Management",
-  "Cross-functional Leadership",
-  "Strategic Planning",
-  "Change Management",
-  "Technical Implementation",
+  "Stakeholder Communication",
+  "Scope Management",
+  "Contract Management",
+  "Resource Allocation",
   "Process Optimization",
-  "Resource Allocation"
+  "Microsoft Project, Jira, Confluence",
+  "Mandarin Language"
 ];
 
 const About = () => {
@@ -59,13 +59,13 @@ const About = () => {
               className="space-y-4 text-muted-foreground opacity-0 animation-delay-200"
             >
               <p>
-                With over a decade of project management experience across various industries, I've developed a methodology that balances precision with adaptability. I believe the best project outcomes result from clear communication, thoughtful planning, and responsive execution.
+                With over 8 years of experience in project management across technology and higher education sectors, I've developed a methodology that balances precision with adaptability, consistently delivering projects on time, within scope, and under budget.
               </p>
               <p>
-                My approach centers on understanding the unique needs of each project while maintaining a focus on delivering tangible value. By aligning technical requirements with business objectives, I ensure projects not only meet specifications but drive meaningful results.
+                My approach is centered on effective risk management, strategic resource allocation, and clear stakeholder communication. By aligning technical requirements with business objectives, I ensure projects not only meet specifications but drive meaningful results with an average of 20% improvement in project efficiency.
               </p>
               <p>
-                I specialize in guiding complex initiatives from concept to completion, particularly in environments where change management and stakeholder alignment are critical to success.
+                I'm proficient in Agile, Waterfall, and Lean methodologies, adapting my approach to each project's unique requirements. My PMP certification, combined with expertise in business analytics and organizational leadership in DEI, enables me to lead complex initiatives from concept to completion.
               </p>
             </div>
           </div>
