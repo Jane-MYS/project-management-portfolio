@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Lightbulb, CheckCircle, Target, Tool, Puzzle } from 'lucide-react';
+import { ArrowLeft, Calendar, Lightbulb, CheckCircle, Target, Wrench, Puzzle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { projectsData } from '../components/Projects';
@@ -122,7 +122,7 @@ const ProjectDetail = () => {
                 <div className="bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-border/50 transform transition-transform hover:translate-y-[-5px]">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-purple-100 p-2 rounded-full">
-                      <Tool className="h-5 w-5 text-purple-600" />
+                      <Wrench className="h-5 w-5 text-purple-600" />
                     </div>
                     <h2 className="text-xl font-medium">Tools & Technologies</h2>
                   </div>
