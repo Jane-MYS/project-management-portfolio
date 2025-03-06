@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -31,19 +30,6 @@ export const projectsData = [
     results: "Improved collaboration, reduced manual workload, enhanced stakeholder engagement, and optimized response times for member inquiries.",
     technologies: "Google Workspace, Joomla, WordPress, Wix, DarkRhino, Mailchimp, Slack, Trello, AI-powered automation tools.",
     methodologies: "Agile project management, stakeholder-driven development, and process optimization."
-  },
-  {
-    title: "PMI Delaware Valley Chapter",
-    description: "Managed a 6-month document migration to Google Shared Drive, improving access by 30% and establishing an efficient folder hierarchy with proper access controls.",
-    category: "Project Manager (Volunteer)",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    fullDescription: [
-      "Applied Waterfall methodology with defined phases for planning, migration, training, and final review to ensure structured implementation of the Google Workspace Migration.",
-      "Managed a 6-month document migration to Google Shared Drive, improving access by 30% and establishing a folder hierarchy."
-    ],
-    challenges: "Coordinating a volunteer-based project team while ensuring proper document organization, access control, and user adoption across the chapter.",
-    solutions: "Defined access permissions, created drive management protocols, and delivered comprehensive training to members to ensure smooth transition and adoption.",
-    results: "Achieved 80% user adoption within the first month, significantly improved document accessibility, and established sustainable document management practices for the chapter."
   },
   {
     title: "Santa Monica College Tutoring Program",
