@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Send, Linkedin, Award } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { toast } from "sonner";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -36,16 +37,37 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Message sent successfully", {
-        description: "Thank you for your message. I'll get back to you soon.",
+    // Initialize EmailJS with your user ID
+    // You'll need to replace these with your actual EmailJS service, template, and user IDs
+    const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
+    const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
+    const userId = 'YOUR_EMAILJS_USER_ID';
+    
+    const templateParams = {
+      from_name: name,
+      reply_to: email,
+      message: message
+    };
+    
+    emailjs.send(serviceId, templateId, templateParams, userId)
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        toast.success("Message sent successfully", {
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+        toast.error("Failed to send message", {
+          description: "There was an error sending your message. Please try again later.",
+        });
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-      setName('');
-      setEmail('');
-      setMessage('');
-      setIsSubmitting(false);
-    }, 1500);
   };
 
   return (
