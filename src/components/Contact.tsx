@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Phone, Mail, Linkedin, Award } from 'lucide-react';
+import { Send, Linkedin, Award } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { toast } from "sonner";
 
@@ -61,33 +61,13 @@ const Contact = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             I'm always open to discussing new projects, opportunities, or partnerships.
-            Feel free to reach out through the form or my contact information below.
+            Feel free to reach out through the form or connect with me on LinkedIn.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
           <div className="lg:col-span-2 space-y-8">
             <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-base font-medium">Phone</h3>
-                  <p className="text-sm text-muted-foreground mt-1">213-519-2319</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-base font-medium">Email</h3>
-                  <p className="text-sm text-muted-foreground mt-1">Mengyish@usc.edu</p>
-                </div>
-              </div>
-              
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Linkedin className="h-5 w-5 text-primary" />
