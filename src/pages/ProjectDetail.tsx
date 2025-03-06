@@ -92,6 +92,20 @@ const ProjectDetail = () => {
                   <p>{project.results}</p>
                 </>
               )}
+              
+              {project.technologies && (
+                <>
+                  <h2 className="text-2xl font-medium mt-8 mb-4">Tools & Technologies</h2>
+                  <p>{project.technologies}</p>
+                </>
+              )}
+              
+              {project.methodologies && (
+                <>
+                  <h2 className="text-2xl font-medium mt-8 mb-4">Methodologies</h2>
+                  <p>{project.methodologies}</p>
+                </>
+              )}
             </div>
           </div>
         </div>

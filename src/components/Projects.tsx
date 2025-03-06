@@ -1,20 +1,21 @@
-
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
 export const projectsData = [
   {
-    title: "TransferBot – AI-Powered Support",
+    title: "TransferBot – AI-Powered Support for Transfer",
     description: "Founded and led the development of TransferBot, an AI-powered Discord chatbot designed to support California community college students in their transfer process.",
     category: "Founder & Developer",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     fullDescription: [
-      "Founded and led the development of TransferBot, an AI-powered Discord chatbot designed to support California community college students in their transfer process to UC, CSU, and private universities.",
-      "Trained AI bot to provide academic advising features, covering UC Transfer Admission Guarantee (TAG), CSU ADT pathways, and IGETC certification."
+      "TransferBot is an AI-powered Discord chatbot I designed to help California community college students navigate the complex transfer process to UC, CSU, and private universities.",
+      "I founded and developed this solution starting in January 2024 to address the low transfer rates and complex requirements students face."
     ],
-    challenges: "Creating an accessible, user-friendly platform that could accurately provide complex transfer information specific to California's higher education systems.",
-    solutions: "Built personalized study & transfer planning tools, offering tailored pathways based on majors and target universities, making the service accessible and free to all students.",
-    results: "Successfully launched an AI chatbot that helps community college students navigate the complex transfer process, improving accessibility to critical transfer information."
+    challenges: "Only ~20% of students transfer within four years due to credit loss, complex requirements, and limited advising support.",
+    solutions: "Built an AI chatbot integrated with ASSIST.org, ADT, IGETC, and CSU GE to provide 24/7 automated course equivalency checks, academic advising, personalized study plans, and transfer application support.",
+    results: "Increased accessibility to free, instant transfer guidance, reducing reliance on overburdened advisors and improving student confidence in transfer planning.",
+    technologies: "Discord API, AI/NLP models, ASSIST.org integration, database management, and automation tools.",
+    methodologies: "Agile development, user-centered design, and continuous feedback from students and advisors to refine AI responses and expand features."
   },
   {
     title: "PMI Delaware Valley Chapter",
