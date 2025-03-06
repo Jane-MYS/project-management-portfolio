@@ -18,6 +18,21 @@ export const projectsData = [
     methodologies: "Agile development, user-centered design, and continuous feedback from students and advisors to refine AI responses and expand features."
   },
   {
+    title: "Google Workspace Migration & Implementation",
+    description: "Led the Google Workspace migration and implementation to enhance training, marketing, and membership management for a professional organization with 4,000+ members.",
+    category: "Project Management Institute (PMI)",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    fullDescription: [
+      "Led the Google Workspace migration and implementation project to enhance training, marketing, and membership management capabilities for a professional organization with over 4,000 members.",
+      "Focused on improving stakeholder engagement, operational efficiency, and communication workflows while ensuring a smooth transition to new digital tools."
+    ],
+    challenges: "Needed to improve stakeholder engagement, operational efficiency, and communication workflows while ensuring a smooth transition to new digital tools.",
+    solutions: "Implemented Google Workspace, established a ticketing system for improved member support, and integrated AI tools to streamline administrative functions.",
+    results: "Improved collaboration, reduced manual workload, enhanced stakeholder engagement, and optimized response times for member inquiries.",
+    technologies: "Google Workspace, Joomla, WordPress, Wix, DarkRhino, Mailchimp, Slack, Trello, AI-powered automation tools.",
+    methodologies: "Agile project management, stakeholder-driven development, and process optimization."
+  },
+  {
     title: "PMI Delaware Valley Chapter",
     description: "Managed a 6-month document migration to Google Shared Drive, improving access by 30% and establishing an efficient folder hierarchy with proper access controls.",
     category: "Project Manager (Volunteer)",
