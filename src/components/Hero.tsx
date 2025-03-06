@@ -48,7 +48,7 @@ const Hero = () => {
           Delivering <span className="relative inline-block">exceptional<span className="absolute -bottom-1 left-0 w-full h-[1px] bg-foreground"></span></span> results through strategic project management
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-          Results-driven Project Manager with 8+ years of experience in technology and higher education sectors, specializing in Agile, Waterfall, and Lean methodologies.
+          Results-driven Project Manager with 8+ years of experience in technology and higher education sectors.
         </p>
         
         <div 
