@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 
 const Contact = () => {
   const [name, setName] = useState('');
