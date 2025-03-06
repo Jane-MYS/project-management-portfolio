@@ -76,6 +76,21 @@ export const projectsData = [
     results: "Improved schedule adherence by 15%, reduced defects by 10%, decreased onboarding time by 20%, and enhanced overall project tracking with structured risk logs.",
     technologies: "Lean Six Sigma tools, SOP documentation frameworks, risk management logs, and internal reporting dashboards.",
     methodologies: "Lean project management, quality control, and process optimization."
+  },
+  {
+    title: "Spring Bud Education Support Initiative",
+    description: "Managed education funding for girls in rural China, ensuring financial aid reached those most in need while maintaining transparency and stakeholder trust.",
+    category: "Project Coordinator",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
+    fullDescription: [
+      "Managed education funding for girls in rural China during Summers 2015 – 2017, ensuring financial aid reached those most in need.",
+      "Applied a stakeholder-centered approach to improve fund allocation and expand outreach to families in need."
+    ],
+    challenges: "Faced inefficiencies in fund distribution, limited outreach, and the need for increased donor engagement to sustain long-term impact.",
+    solutions: "Applied a stakeholder-centered approach, improving fund allocation accuracy by 30%, expanded outreach to 200+ families, and strengthened collaboration with orphanages and foster care organizations. Led social media campaigns to raise awareness, increasing annual donations by 15%, and developed detailed progress reports to enhance transparency for stakeholders.",
+    results: "Successfully allocated ¥100,000 RMB per summer, improved fund distribution accuracy by 30%, expanded access to education for 200+ families, and increased donor contributions by 15%.",
+    technologies: "Google Workspace, social media platforms, data analytics tools, and donor management systems.",
+    methodologies: "Stakeholder-centered project management, data-driven decision-making, and nonprofit fundraising strategies."
   }
 ];
 
