@@ -49,7 +49,7 @@ const Navbar = () => {
             scrollToSection('#home');
           }}
         >
-          <span className="text-primary">Portfolio</span>
+          <span className="text-primary">Jane Shi</span>
         </a>
 
         <nav className="hidden md:flex items-center space-x-8">
