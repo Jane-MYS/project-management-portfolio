@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -19,20 +18,6 @@ export const projectsData = [
     methodologies: "Agile development, user-centered design, and continuous feedback from students and advisors to refine AI responses and expand features."
   },
   {
-    title: "Google Workspace Migration & Implementation",
-    description: "Led the Google Workspace migration and implementation to enhance training, marketing, and membership management for a professional organization with 4,000+ members.",
-    category: "Project Management Institute (PMI)",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    fullDescription: [
-      "Focused on improving stakeholder engagement, operational efficiency, and communication workflows while ensuring a smooth transition to new digital tools."
-    ],
-    challenges: "Needed to improve stakeholder engagement, operational efficiency, and communication workflows while ensuring a smooth transition to new digital tools.",
-    solutions: "Implemented Google Workspace, established a ticketing system for improved member support, and integrated AI tools to streamline administrative functions.",
-    results: "Improved collaboration, reduced manual workload, enhanced stakeholder engagement, and optimized response times for member inquiries.",
-    technologies: "Google Workspace, Joomla, WordPress, Wix, DarkRhino, Mailchimp, Slack, Trello, AI-powered automation tools.",
-    methodologies: "Agile project management, stakeholder-driven development, and process optimization."
-  },
-  {
     title: "Educational Learning Support Program",
     description: "Developed and managed a comprehensive training and learning support program for tutors and students, enhancing accessibility and effectiveness of tutoring services.",
     category: "Santa Monica College",
@@ -49,16 +34,18 @@ export const projectsData = [
   },
   {
     title: "Redux Reimagine LLC – AI-Enhanced Smart Trash Can",
-    description: "Managed a team of 5 engineers in AI-driven software development, achieving 85% classification accuracy while reducing costs by 15%.",
+    description: "Led the development of an AI-powered smart trash can, integrating machine learning for waste classification and automation.",
     category: "Project Manager",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     fullDescription: [
-      "Utilized Scrum methodology with sprint planning and reviews, improving team alignment and achieving deliverables on time for AI-Enhanced Smart Trash Can development.",
-      "Managed a team of 5 engineers in AI-driven software development, achieving 85% classification accuracy."
+      "Led the development of an AI-powered smart trash can at Redux Reimagine LLC from March 2020 to July 2021, integrating machine learning for waste classification and automation.",
+      "Managed a team of 5 engineers, implementing Scrum methodology with sprint planning and reviews to improve team alignment and deliver on time."
     ],
-    challenges: "Developing advanced AI classification systems with limited funding during COVID-19 while maintaining project momentum and technical quality.",
-    solutions: "Oversaw budget allocation, achieving a 15% cost reduction by optimizing resources and vendor contracts. Utilized structured risk management to mitigate impacts from limited funding.",
-    results: "Successfully delivered AI software with 85% classification accuracy while maintaining budget discipline and producing comprehensive documentation for investor updates."
+    challenges: "Faced budget constraints and funding limitations during COVID-19, requiring strategic resource allocation and risk management.",
+    solutions: "Implemented Scrum methodologies for sprint planning and reviews, optimized vendor contracts, and developed investor-focused project documentation.",
+    results: "Achieved 85% classification accuracy, reduced costs by 15%, and maintained project timelines despite financial constraints.",
+    technologies: "AI/ML frameworks, Scrum boards (Jira/Trello), budget tracking tools, and investor reporting documentation.",
+    methodologies: "Agile (Scrum), risk management, cost optimization, and stakeholder communication."
   },
   {
     title: "Advance Academy – Transfer Application Counseling",
