@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -23,7 +24,7 @@ export const projectsData = [
     category: "Santa Monica College",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
     fullDescription: [
-      "Developed and managed a comprehensive training and learning support program for tutors and students at Santa Monica College from July 2021 to present.",
+      "Project initiation since July 2021.",
       "Project included a 3-month initiation phase followed by ongoing enhancement and maintenance activities to continuously improve the program."
     ],
     challenges: "Needed to improve tutor onboarding, training consistency, resource accessibility, and operational workflows across multiple departments.",
