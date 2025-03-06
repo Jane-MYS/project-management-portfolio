@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -32,17 +33,19 @@ export const projectsData = [
     methodologies: "Agile project management, stakeholder-driven development, and process optimization."
   },
   {
-    title: "Santa Monica College Tutoring Program",
-    description: "Designed and delivered engaging training programs for over 50 tutors, establishing a virtual platform with resources for over 1,000 users.",
-    category: "Tutoring Coordinator",
+    title: "Educational Learning Support Program",
+    description: "Developed and managed a comprehensive training and learning support program for tutors and students, enhancing accessibility and effectiveness of tutoring services.",
+    category: "Santa Monica College",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
     fullDescription: [
-      "Designed and delivered engaging in-person and virtual training programs for over 50 new hire tutors, creating materials that equipped them with essential methodologies and problem-solving skills.",
-      "Led interactive group training sessions (5-10 tutors), fostering collaboration and knowledge sharing, resulting in high satisfaction ratings and demonstrating the effectiveness of the training approach."
+      "Developed and managed a comprehensive training and learning support program for tutors and students at Santa Monica College from July 2021 to present.",
+      "Project included a 3-month initiation phase followed by ongoing enhancement and maintenance activities to continuously improve the program."
     ],
-    challenges: "Transitioning to and maintaining effective tutoring services in both in-person and virtual environments while ensuring consistent quality of tutor training.",
-    solutions: "Established the MLTC virtual platform with extensive resources and implemented standardized protocols for virtual onboarding and communication.",
-    results: "Facilitated smooth adoption by over 1,000 users, enhanced accessibility to tutoring services, and implemented workflow optimizations across multiple departments within three months."
+    challenges: "Needed to improve tutor onboarding, training consistency, resource accessibility, and operational workflows across multiple departments.",
+    solutions: "Designed and delivered in-person and virtual training for 50+ new tutors, established the MLTC virtual platform with extensive resources for 1,000+ users, and streamlined onboarding and communication through standardized protocols.",
+    results: "Increased tutor engagement and effectiveness, achieved high satisfaction ratings, reduced onboarding time, and improved cross-departmental coordination within three months.",
+    technologies: "Learning Management Systems (Canvas), Zoom, Google Workspace, Trello, and workflow automation tools.",
+    methodologies: "Instructional design, blended learning strategies, agile project management, and process optimization."
   },
   {
     title: "Redux Reimagine LLC – AI-Enhanced Smart Trash Can",
