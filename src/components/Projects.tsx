@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -64,17 +63,19 @@ export const projectsData = [
     methodologies: "Agile program management, risk management, student-centered advising, and process optimization."
   },
   {
-    title: "BMW China – New Model Launch",
-    description: "Supported the launch of a new BMW model's paint shop, coordinating with 500 employees and reducing defects by 10%.",
-    category: "Project Intern",
+    title: "New Model Launch, Paint Shop Staff Workshop",
+    description: "Supported the launch of a new BMW model's paint shop, ensuring smooth operations and process efficiency in a high-stakes automotive manufacturing environment.",
+    category: "BMW China",
     image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
     fullDescription: [
-      "Employed Lean methodology focused on quality improvement and waste reduction to enhance process efficiency for the Paint Shop Setup project.",
-      "Supported the launch of a new BMW model's paint shop, coordinating with 500 employees to meet milestones, improving schedule adherence by 15%."
+      "Supported the launch of a new BMW model's paint shop at BMW China from January 2017 to July 2017, ensuring smooth operations and process efficiency.",
+      "Applied Lean methodology to improve efficiency and coordinated with 500 employees to meet production milestones."
     ],
-    challenges: "Coordinating with a large workforce of 500 employees while implementing quality control systems in a high-precision manufacturing environment.",
-    solutions: "Assisted in implementing quality control systems and developed SOPs to streamline operations and onboarding processes.",
-    results: "Reduced defects by 10%, improved schedule adherence by 15%, and reduced onboarding time by 20% through effective SOP development."
+    challenges: "Needed to enhance quality control, streamline onboarding, and improve milestone adherence while coordinating with a large workforce.",
+    solutions: "Applied Lean methodology to improve efficiency, coordinated with 500 employees to meet production milestones, implemented quality control systems, and developed Standard Operating Procedures (SOPs) for smoother onboarding. Regular risk assessments and updates ensured alignment with executive expectations.",
+    results: "Improved schedule adherence by 15%, reduced defects by 10%, decreased onboarding time by 20%, and enhanced overall project tracking with structured risk logs.",
+    technologies: "Lean Six Sigma tools, SOP documentation frameworks, risk management logs, and internal reporting dashboards.",
+    methodologies: "Lean project management, quality control, and process optimization."
   }
 ];
 
