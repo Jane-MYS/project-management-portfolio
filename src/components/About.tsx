@@ -11,8 +11,8 @@ const skills = [
   "Contract Management",
   "Resource Allocation",
   "Process Optimization",
-  "Microsoft Project, Jira, Confluence",
-  "Mandarin Language"
+  "Tech-Savvy & Adaptive",
+  "Vendor & Partnership Management"
 ];
 
 const About = () => {
