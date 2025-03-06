@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
@@ -23,7 +24,6 @@ export const projectsData = [
     category: "Project Management Institute (PMI)",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     fullDescription: [
-      "Led the Google Workspace migration and implementation project to enhance training, marketing, and membership management capabilities for a professional organization with over 4,000 members.",
       "Focused on improving stakeholder engagement, operational efficiency, and communication workflows while ensuring a smooth transition to new digital tools."
     ],
     challenges: "Needed to improve stakeholder engagement, operational efficiency, and communication workflows while ensuring a smooth transition to new digital tools.",
