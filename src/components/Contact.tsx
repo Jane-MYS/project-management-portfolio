@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Send } from 'lucide-react';
+import { Send, Phone, Mail, Linkedin, Award } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { toast } from "sonner";
 
@@ -10,9 +10,8 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   
-  const titleRef = useRef<HTMLHeadingElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
-  const contactInfoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -24,15 +23,12 @@ const Contact = () => {
       { threshold: 0.1 }
     );
 
-    const elements = [titleRef.current, formRef.current, contactInfoRef.current];
-    elements.forEach(el => {
-      if (el) observer.observe(el);
-    });
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    if (formRef.current) observer.observe(formRef.current);
 
     return () => {
-      elements.forEach(el => {
-        if (el) observer.unobserve(el);
-      });
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (formRef.current) observer.unobserve(formRef.current);
     };
   }, []);
 
@@ -53,51 +49,84 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 px-6 md:px-10">
+    <section 
+      id="contact" 
+      ref={sectionRef}
+      className="py-20 md:py-32 px-6 md:px-10 bg-gradient-to-b from-background to-secondary/20 opacity-0"
+    >
       <div className="max-w-5xl mx-auto">
-        <h2 
-          ref={titleRef}
-          className="text-3xl md:text-4xl font-medium text-center mb-12 opacity-0 mx-auto"
-        >
-          Let's Connect
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Let's Connect
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            I'm always open to discussing new projects, opportunities, or partnerships.
+            Feel free to reach out through the form or my contact information below.
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <div 
-            ref={contactInfoRef}
-            className="md:col-span-1 opacity-0 animation-delay-200"
-          >
-            <div className="bg-secondary/30 p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Contact Information</h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground mb-1">Phone</p>
-                  <p className="text-sm">213-519-2319</p>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+          <div className="lg:col-span-2 space-y-8">
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground mb-1">Email</p>
-                  <p className="text-sm">Mengyish@usc.edu</p>
+                  <h3 className="text-base font-medium">Phone</h3>
+                  <p className="text-sm text-muted-foreground mt-1">213-519-2319</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground mb-1">LinkedIn</p>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline">View Profile</a>
+                  <h3 className="text-base font-medium">Email</h3>
+                  <p className="text-sm text-muted-foreground mt-1">Mengyish@usc.edu</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Linkedin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground mb-1">Certifications</p>
-                  <p className="text-sm">PMP, Business Analytics, Organizational Leadership in DEI</p>
+                  <h3 className="text-base font-medium">LinkedIn</h3>
+                  <a 
+                    href="https://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:underline mt-1 block"
+                  >
+                    Connect with me
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Award className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-base font-medium">Certifications</h3>
+                  <p className="text-sm text-muted-foreground mt-1">PMP, Business Analytics, Organizational Leadership in DEI</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <form 
-            ref={formRef}
+          <form
+            ref={formRef} 
             onSubmit={handleSubmit}
-            className="md:col-span-2 space-y-6 opacity-0 animation-delay-300"
+            className="lg:col-span-3 bg-card shadow-lg rounded-xl p-6 md:p-8 portfolio-card-shadow"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+            <h3 className="text-xl font-bold mb-6">Send a Message</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="space-y-2">
+                <label htmlFor="name" className="text-sm font-medium">
                   Name
                 </label>
                 <input
@@ -105,14 +134,14 @@ const Contact = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 rounded-md border border-border bg-background focus:outline-none focus:ring-1 focus:ring-primary/50 transition-shadow"
+                  className="w-full px-4 py-2.5 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
                   placeholder="Your name"
                   required
                 />
               </div>
               
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium">
                   Email
                 </label>
                 <input
@@ -120,22 +149,22 @@ const Contact = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-md border border-border bg-background focus:outline-none focus:ring-1 focus:ring-primary/50 transition-shadow"
+                  className="w-full px-4 py-2.5 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
                   placeholder="Your email"
                   required
                 />
               </div>
             </div>
             
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
+            <div className="space-y-2 mb-6">
+              <label htmlFor="message" className="text-sm font-medium">
                 Message
               </label>
               <textarea
                 id="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full px-4 py-3 rounded-md border border-border bg-background focus:outline-none focus:ring-1 focus:ring-primary/50 transition-shadow min-h-[150px]"
+                className="w-full px-4 py-2.5 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all min-h-[150px]"
                 placeholder="Your message"
                 required
               />
@@ -147,8 +176,8 @@ const Contact = () => {
               className={cn(
                 "w-full py-3 px-6 flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground font-medium transition-all",
                 isSubmitting 
-                  ? "opacity-90 cursor-not-allowed" 
-                  : "hover:opacity-90 active:scale-[0.98]"
+                  ? "opacity-80 cursor-not-allowed" 
+                  : "hover:bg-primary/90 active:scale-[0.98]"
               )}
             >
               {isSubmitting ? (
