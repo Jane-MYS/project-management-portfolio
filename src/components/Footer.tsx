@@ -24,7 +24,9 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
               aria-label="LinkedIn"
             >
