@@ -15,6 +15,10 @@ const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
+    // Initialize EmailJS with your public key
+    // You can find this in your EmailJS dashboard
+    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -37,11 +41,10 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Initialize EmailJS with your user ID
-    // You'll need to replace these with your actual EmailJS service, template, and user IDs
+    // EmailJS configuration
+    // Replace these with your actual EmailJS service, template, and user IDs
     const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
     const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
-    const userId = 'YOUR_EMAILJS_USER_ID';
     
     const templateParams = {
       from_name: name,
@@ -49,12 +52,13 @@ const Contact = () => {
       message: message
     };
     
-    emailjs.send(serviceId, templateId, templateParams, userId)
+    emailjs.send(serviceId, templateId, templateParams)
       .then((response) => {
         console.log('Email sent successfully:', response);
         toast.success("Message sent successfully", {
           description: "Thank you for your message. I'll get back to you soon.",
         });
+        // Reset form
         setName('');
         setEmail('');
         setMessage('');
