@@ -42,8 +42,8 @@ const Contact = () => {
     setIsSubmitting(true);
     
     // EmailJS configuration
-    // Replace these with your actual EmailJS service, template, and user IDs
-    const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
+    // Replace the template ID and public key with your actual values
+    const serviceId = 'service_dtqxfea';
     const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
     
     const templateParams = {
