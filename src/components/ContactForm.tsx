@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -19,8 +18,7 @@ const ContactForm = ({ className }: ContactFormProps) => {
 
   useEffect(() => {
     // Initialize EmailJS with your public key
-    // You can find this in your EmailJS dashboard
-    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+    emailjs.init("EMfMIqzm2ItpvMqoh");
     
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -43,7 +41,6 @@ const ContactForm = ({ className }: ContactFormProps) => {
     setIsSubmitting(true);
     
     // EmailJS configuration
-    // Replace the template ID and public key with your actual values
     const serviceId = 'service_dtqxfea';
     const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
     
