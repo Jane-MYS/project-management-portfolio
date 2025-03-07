@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
-  base: "/project-management-portfolio/", // ✅ Ensure this is set correctly
+  base: "/project-management-portfolio/",
   server: {
     host: "::",
     port: 8080,
@@ -17,5 +17,8 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    outDir: "dist",
   },
 });
