@@ -1,10 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const navLinks = [
     { name: 'Home', href: '#home' },
@@ -26,9 +29,20 @@ const Navbar = () => {
 
   const scrollToSection = (sectionId: string) => {
     setMobileMenuOpen(false);
-    const section = document.querySelector(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    if (isHomePage) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleNavigation = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    if (!isHomePage) {
+      window.location.href = '/';
+    } else {
+      scrollToSection(href);
     }
   };
 
@@ -38,12 +52,9 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a 
-          href="#home" 
+          href="/"
           className="text-xl font-semibold tracking-tight"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection('#home');
-          }}
+          onClick={(e) => handleNavigation(e, '#home')}
         >
           <span className="text-primary">Jane Shi</span>
         </a>
@@ -52,12 +63,9 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a
               key={link.name}
-              href={link.href}
+              href={isHomePage ? link.href : '/'}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.href);
-              }}
+              onClick={(e) => handleNavigation(e, link.href)}
             >
               {link.name}
             </a>
@@ -83,12 +91,9 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a
               key={link.name}
-              href={link.href}
+              href={isHomePage ? link.href : '/'}
               className="py-3 text-lg font-medium border-b border-border/50 text-foreground"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.href);
-              }}
+              onClick={(e) => handleNavigation(e, link.href)}
             >
               {link.name}
             </a>
