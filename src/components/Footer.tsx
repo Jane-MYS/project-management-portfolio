@@ -17,7 +17,9 @@ const Footer = () => {
           
           <div className="flex items-center space-x-4">
             <a 
-              href="#" 
+              href="https://github.com/Jane-MYS" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
               aria-label="GitHub"
             >
