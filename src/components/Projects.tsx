@@ -67,7 +67,7 @@ export const projectsData = [
     title: "New Model Launch, Paint Shop Staff Workshop",
     description: "Supported the launch of a new BMW model's paint shop, ensuring smooth operations and process efficiency in a high-stakes automotive manufacturing environment.",
     category: "BMW China",
-    image: "https://unsplash.com/photos/a-close-up-of-the-tail-lights-of-a-car-9dp9DHM0Z84",
+    image: "https://images.unsplash.com/photo-1706472141078-8e64458dce8f?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     fullDescription: [
       "Supported the launch of a new BMW model's paint shop at BMW China from January 2017 to July 2017, ensuring smooth operations and process efficiency.",
       "Applied Lean methodology to improve efficiency and coordinated with 500 employees to meet production milestones."
@@ -82,7 +82,7 @@ export const projectsData = [
     title: "Spring Bud Education Support Initiative",
     description: "Managed education funding for girls in rural China, ensuring financial aid reached those most in need while maintaining transparency and stakeholder trust.",
     category: "Project Coordinator",
-    image: "https://unsplash.com/photos/silhouette-of-child-sitting-behind-tree-during-sunset-6jYoil2GhVk",
+    image: "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     fullDescription: [
       "Managed education funding for girls in rural China during Summers 2015 – 2017, ensuring financial aid reached those most in need.",
       "Applied a stakeholder-centered approach to improve fund allocation and expand outreach to families in need."
