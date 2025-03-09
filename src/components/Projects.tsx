@@ -67,7 +67,7 @@ export const projectsData = [
     title: "New Model Launch, Paint Shop Staff Workshop",
     description: "Supported the launch of a new BMW model's paint shop, ensuring smooth operations and process efficiency in a high-stakes automotive manufacturing environment.",
     category: "BMW China",
-    image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
+    image: "https://unsplash.com/photos/a-close-up-of-the-tail-lights-of-a-car-9dp9DHM0Z84",
     fullDescription: [
       "Supported the launch of a new BMW model's paint shop at BMW China from January 2017 to July 2017, ensuring smooth operations and process efficiency.",
       "Applied Lean methodology to improve efficiency and coordinated with 500 employees to meet production milestones."
