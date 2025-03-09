@@ -42,7 +42,7 @@ npm run dev
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
 
-To commit your changes follow these steps
+**Commit changes to Github**
 
 ```shell
 # Step 1 check which files have changed and that you want to commit
