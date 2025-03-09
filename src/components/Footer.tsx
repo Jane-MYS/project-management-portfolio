@@ -4,6 +4,10 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const handleClick = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer className="py-12 md:py-16 px-6 md:px-10 border-t border-border/60">
       <div className="max-w-7xl mx-auto">
@@ -15,35 +19,31 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="flex items-center space-x-4">
             {/* GitHub Link */}
-            <a
-              href="https://github.com/Jane-MYS"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleClick('https://github.com/Jane-MYS')}
               className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
               aria-label="GitHub"
             >
               <Github className="h-6 w-6" />
-            </a>
+            </button>
 
             {/* LinkedIn Link */}
-            <a
-              href="https://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleClick('https://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153')}
               className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-6 w-6" />
-            </a>
+            </button>
 
             {/* Email Link */}
-            <a
-              href="mailto:mengyishi9@gmail.com"
+            <button
+              onClick={() => handleClick('mailto:mengyishi9@gmail.com')}
               className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
               aria-label="Email"
             >
               <Mail className="h-6 w-6" />
-            </a>
+            </button>
           </div>
         </div>
       </div>
