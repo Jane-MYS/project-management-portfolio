@@ -42,13 +42,26 @@ npm run dev
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+To commit your changes follow these steps
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```shell
+# Step 1 check which files have changed and that you want to commit
+git status 
+
+# Step 2 add your changes to staging area (ready to commit)
+git add <file1> <file2> ...
+
+# Step 3
+git commit -m "descriptive message about changes here!"
+
+# Step 3b Alternatively, if you want to commit ALL files and skip 2 you can run
+git commmit -a -m "descriptive message about changes here!"
+
+# Step 4
+git push origin
+```
+
+Ensure to check your github repo to see that your repo is in sync and that actions have been triggered accordingly.
 
 ## What technologies are used for this project?
 
