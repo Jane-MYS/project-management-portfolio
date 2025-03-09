@@ -1,6 +1,6 @@
 
 import React, { useRef, useEffect } from 'react';
-import { cn } from "@/lib/utils";
+
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -48,10 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <Link to={`/project/${projectId}`}>
       <div 
         ref={cardRef}
-        className={cn(
-          "group relative aspect-[4/3] md:aspect-[3/2] lg:aspect-[16/9] rounded-lg overflow-hidden portfolio-card-shadow portfolio-hover opacity-0",
-          `animation-delay-${index * 200}`
-        )}
+        className={`group relative aspect-[4/3] md:aspect-[3/2] lg:aspect-[16/9] rounded-lg overflow-hidden portfolio-card-shadow portfolio-hover opacity-0 animation-delay-${index * 200}`}
       >
         <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300 z-10"></div>
         

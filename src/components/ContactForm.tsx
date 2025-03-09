@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { toast } from "sonner";
 import emailjs from 'emailjs-com';
 
@@ -76,7 +75,7 @@ const ContactForm = ({ className }: ContactFormProps) => {
     <form
       ref={formRef} 
       onSubmit={handleSubmit}
-      className={cn("lg:col-span-3 bg-card shadow-lg rounded-xl p-6 md:p-8 portfolio-card-shadow", className)}
+      className={`lg:col-span-3 bg-card shadow-lg rounded-xl p-6 md:p-8 portfolio-card-shadow ${className || ''}`}
     >
       <h3 className="text-xl font-bold mb-6">Send a Message</h3>
       
@@ -129,12 +128,7 @@ const ContactForm = ({ className }: ContactFormProps) => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className={cn(
-          "w-full py-3 px-6 flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground font-medium transition-all",
-          isSubmitting 
-            ? "opacity-80 cursor-not-allowed" 
-            : "hover:bg-primary/90 active:scale-[0.98]"
-        )}
+        className={`w-full py-3 px-6 flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground font-medium transition-all ${isSubmitting ? 'opacity-80 cursor-not-allowed' : 'hover:bg-primary/90 active:scale-[0.98]'}`}
       >
         {isSubmitting ? (
           <>

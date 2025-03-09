@@ -17,14 +17,28 @@ const Footer = () => {
               href="https://github.com/Jane-MYS"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = 'https://github.com/Jane-MYS';
-              }}
               className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors cursor-pointer"
               aria-label="GitHub"
             >
               <Github className="h-6 w-6" />
+            </a>
+            <a
+              href="mailto:mengyishi9@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors cursor-pointer"
+              aria-label="Email"
+            >
+              <Mail className="h-6 w-6" />
+            </a>
+            <a
+              href="http://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-secondary transition-colors cursor-pointer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6" />
             </a>
 
             {/* ... other social links follow the same pattern ... */}

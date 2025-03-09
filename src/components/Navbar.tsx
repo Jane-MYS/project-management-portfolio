@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { cn } from "@/lib/utils";
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
@@ -35,10 +34,7 @@ const Navbar = () => {
 
   return (
     <header 
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 lg:px-10",
-        isScrolled ? "py-4 bg-background/80 glass-effect border-b border-border/40" : "py-6"
-      )}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 lg:px-10 ${isScrolled ? "py-4 bg-background/80 glass-effect border-b border-border/40" : "py-6"}`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a 
