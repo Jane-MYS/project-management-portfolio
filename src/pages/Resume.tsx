@@ -22,7 +22,7 @@ const Resume = () => {
             <button
               type="button"
               onClick={() => window.print()}
-              className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 print:hidden"
+              className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 print:hidden whitespace-nowrap shrink-0"
             >
               Download Resume
               <Download className="h-4 w-4" />

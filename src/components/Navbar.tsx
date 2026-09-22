@@ -29,7 +29,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 lg:px-10 ${
         isScrolled || mobileMenuOpen
-          ? "py-4 bg-background/80 glass-effect border-b border-border/40"
+          ? "py-4 bg-background/95 glass-effect border-b border-border/40"
           : "py-6"
       }`}
     >
