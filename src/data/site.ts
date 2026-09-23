@@ -133,9 +133,21 @@ export const contact = {
     "I'm also available for select project-based work involving operations, process improvement, Google Workspace implementation, and education programs.",
 };
 
+export const research = {
+  title: "Research & Collaboration",
+  paragraphs: [
+    "Alongside my work in program operations and higher education, I conduct doctoral-level research focused on higher education, student experiences, organizational practices, and institutional improvement.",
+    "My research interests sit at the intersection of higher education, student support, organizational leadership, and educational practice, with a particular interest in translating research into practical improvements for institutions and the students they serve.",
+    "I am interested in collaborating with researchers, practitioners, and institutions on research projects, publications, conference presentations, and applied studies related to higher education and student success.",
+  ],
+  focus:
+    "higher education, student support, organizational leadership, and educational practice",
+};
+
 export const navLinks = [
   { name: "Work", to: "/#work" },
   { name: "About", to: "/about" },
+  { name: "Research", to: "/research" },
   { name: "Resume", to: "/resume" },
   { name: "Contact", to: "/contact" },
 ];

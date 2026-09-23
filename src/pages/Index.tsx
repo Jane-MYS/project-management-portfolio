@@ -7,6 +7,7 @@ import WhatIDo from "@/components/WhatIDo";
 import FeaturedWork from "@/components/FeaturedWork";
 import HowIWork from "@/components/HowIWork";
 import AboutPreview from "@/components/AboutPreview";
+import ResearchCollaboration from "@/components/ResearchCollaboration";
 import ContactPreview from "@/components/ContactPreview";
 
 const Index = () => {
@@ -31,6 +32,7 @@ const Index = () => {
       <FeaturedWork />
       <HowIWork />
       <AboutPreview />
+      <ResearchCollaboration />
       <ContactPreview />
     </PageShell>
   );
