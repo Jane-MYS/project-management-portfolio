@@ -1,39 +1,40 @@
-
-import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import PageShell from "@/components/PageShell";
+import Hero from "@/components/Hero";
+import WorkBehindTheWork from "@/components/WorkBehindTheWork";
+import FeaturedWork from "@/components/FeaturedWork";
+import ResearchPreview from "@/components/ResearchPreview";
+import CuriousAbout from "@/components/CuriousAbout";
+import ResearchCollaboration from "@/components/ResearchCollaboration";
+import AboutPreview from "@/components/AboutPreview";
+import ContactPreview from "@/components/ContactPreview";
 
 const Index = () => {
+  const location = useLocation();
+
   useEffect(() => {
-    // Smooth scroll behavior for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        if (href) {
-          document.querySelector(href)?.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       });
-    });
-  }, []);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.hash]);
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main>
-        <Hero />
-        <Projects />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <PageShell>
+      <Hero />
+      <WorkBehindTheWork />
+      <FeaturedWork />
+      <ResearchPreview />
+      <CuriousAbout />
+      <ResearchCollaboration />
+      <AboutPreview />
+      <ContactPreview />
+    </PageShell>
   );
 };
 
