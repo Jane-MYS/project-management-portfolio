@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 import Hero from "@/components/Hero";
-import MetricsStrip from "@/components/MetricsStrip";
-import WhatIDo from "@/components/WhatIDo";
+import WorkBehindTheWork from "@/components/WorkBehindTheWork";
 import FeaturedWork from "@/components/FeaturedWork";
-import HowIWork from "@/components/HowIWork";
-import AboutPreview from "@/components/AboutPreview";
+import ResearchPreview from "@/components/ResearchPreview";
+import CuriousAbout from "@/components/CuriousAbout";
 import ResearchCollaboration from "@/components/ResearchCollaboration";
+import AboutPreview from "@/components/AboutPreview";
 import ContactPreview from "@/components/ContactPreview";
 
 const Index = () => {
@@ -27,12 +27,12 @@ const Index = () => {
   return (
     <PageShell>
       <Hero />
-      <MetricsStrip />
-      <WhatIDo />
+      <WorkBehindTheWork />
       <FeaturedWork />
-      <HowIWork />
-      <AboutPreview />
+      <ResearchPreview />
+      <CuriousAbout />
       <ResearchCollaboration />
+      <AboutPreview />
       <ContactPreview />
     </PageShell>
   );

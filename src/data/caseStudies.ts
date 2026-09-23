@@ -27,6 +27,11 @@ export type CaseStudy = {
   year?: string;
   tags: string[];
   summary: string;
+  homepage: string[];
+  emphasis?: string;
+  workOn?: string[];
+  cta: string;
+  featured?: boolean;
   challenge: string[];
   objective?: string;
   role: string;
@@ -43,14 +48,31 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "smc-tutoring-operations",
     number: "01",
-    title: "Scaling Multi-Disciplinary Tutoring Operations",
+    title: "Making a Complex Tutoring Operation Work",
     organization: "Santa Monica College",
-    tags: ["Program Operations", "Workforce Coordination", "Student Services"],
+    tags: ["Workforce Planning", "Hiring", "Training", "Scheduling", "Faculty Coordination", "Service Design", "Technology", "Operational Improvement"],
     summary:
-      "Coordinate tutoring operations supporting multiple academic disciplines and 30–50+ student employees, integrating staffing, scheduling, training, faculty coordination, technology, reporting, and service delivery across in-person and online environments.",
+      "I coordinate the systems behind a multidisciplinary tutoring program involving 30–50+ student employees.",
+    homepage: [
+      "Supporting tutoring across many disciplines isn't simply a scheduling problem.",
+      "It means matching student demand with tutor expertise, navigating hiring requirements, coordinating with faculty, training student employees, managing multiple service platforms, and keeping both in-person and online services functioning as needs change throughout the semester.",
+      "I coordinate the systems behind that operation for a multidisciplinary tutoring program involving 30–50+ student employees.",
+    ],
+    workOn: [
+      "Workforce Planning",
+      "Hiring",
+      "Training",
+      "Scheduling",
+      "Faculty Coordination",
+      "Service Design",
+      "Technology",
+      "Operational Improvement",
+    ],
+    cta: "See How the Operation Works →",
+    featured: true,
     challenge: [
-      "Santa Monica College's tutoring operations require coordinating student employees, faculty expectations, scheduling, multiple academic disciplines, technology platforms, and both online and in-person service delivery.",
-      "The operational challenge is maintaining consistent service while responding to changing course demand, tutor availability, hiring timelines, faculty needs, and institutional requirements.",
+      "Supporting tutoring across many disciplines isn't simply a scheduling problem.",
+      "It means matching student demand with tutor expertise, navigating hiring requirements, coordinating with faculty, training student employees, managing multiple service platforms, and keeping both in-person and online services functioning as needs change throughout the semester.",
     ],
     role: "Tutoring Coordinator",
     scope: [
@@ -154,15 +176,24 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "smc-tutoring-expansion",
     number: "02",
-    title: "Expanding Tutoring Services Across Business, CSIS & Design",
+    title: "Building New Tutoring Services From the Ground Up",
     organization: "Santa Monica College",
     year: "2026",
     tags: ["Program Launch", "Change Management", "Operations Design"],
     summary:
-      "Led the operational expansion of tutoring services into Business, Computer Science/Information Systems, and Graphic & Interaction Design, developing staffing, scheduling, faculty coordination, training, communication, and service-delivery processes.",
+      "In 2026, tutoring operations expanded beyond Modern Languages into Business, Computer Science/Information Systems, and Graphic & Interaction Design—an operating system for a broader academic support program.",
+    homepage: [
+      "In 2026, my role expanded beyond Modern Languages to include tutoring operations for Business, Computer Science/Information Systems, and Graphic & Interaction Design.",
+      "There wasn't a single playbook waiting to be followed.",
+      "The work required translating different departments' needs into an operating model: identifying course demand, finding qualified tutors, coordinating faculty evaluation, establishing schedules, integrating new subjects into existing systems, developing training and communication processes, and solving coverage gaps as they emerged.",
+      "The result wasn't simply a larger tutoring schedule.",
+    ],
+    emphasis: "It was an operating system for a broader academic support program.",
+    cta: "Explore the Expansion →",
+    featured: true,
     challenge: [
-      "Tutoring operations were already running as a multi-disciplinary service. Expanding into Business, Computer Science/Information Systems, and Graphic & Interaction Design meant standing up new coverage without disrupting existing students, tutors, or faculty relationships.",
-      "The launch required new staffing profiles, scheduling models, faculty coordination, training, and communication—change management across departments that had not previously been part of the tutoring operation.",
+      "In 2026, tutoring operations expanded beyond Modern Languages to include Business, Computer Science/Information Systems, and Graphic & Interaction Design.",
+      "There wasn't a single playbook waiting to be followed. The work required translating different departments' needs into an operating model: identifying course demand, finding qualified tutors, coordinating faculty evaluation, establishing schedules, integrating new subjects into existing systems, developing training and communication processes, and solving coverage gaps as they emerged.",
     ],
     role: "Tutoring Coordinator",
     scope: [
@@ -237,14 +268,23 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "waai-google-workspace",
     number: "03",
-    title: "Building Scalable Google Workspace Infrastructure",
-    organization: "Nonprofit Organization",
+    title: "From Scattered Tools to Shared Infrastructure",
+    organization: "Google Workspace Transformation",
     tags: ["Digital Transformation", "Systems Administration", "Process Design"],
     summary:
-      "Designed and implemented a Google Workspace operating environment supporting multiple departments and regional programs, including user administration, Shared Drive architecture, shared inboxes/groups, permissions, access governance, and standardized account-management processes.",
+      "Moved a growing nonprofit toward a centralized Google Workspace environment supporting 51 user accounts, 14 functional areas, multiple shared communication channels, and six regional programs across the United States.",
+    homepage: [
+      "Technology problems are often operations problems in disguise.",
+      "As a nonprofit organization expanded across teams and regional programs, its digital environment needed to grow with it. I helped move the organization toward a centralized Google Workspace environment and built much of the infrastructure behind it.",
+      "That meant thinking beyond account creation.",
+      "I designed how information should be organized, how teams should access it, how shared communication should work, and how accounts and permissions could be governed as the organization grew.",
+      "The resulting environment supported 51 user accounts, 14 functional areas, multiple shared communication channels, and six regional programs across the United States.",
+    ],
+    cta: "Explore the System →",
+    featured: true,
     challenge: [
-      "The organization was operating without a standardized digital infrastructure for account management, shared files, departmental collaboration, regional programs, and access governance.",
-      "As the organization expanded, inconsistent tools and access practices created increasing operational complexity.",
+      "Technology problems are often operations problems in disguise.",
+      "As a nonprofit organization expanded across teams and regional programs, its digital environment needed to grow with it. Inconsistent tools and access practices created increasing operational complexity.",
     ],
     objective:
       "Create a centralized, scalable collaboration environment that could support organizational growth while improving access management and information organization.",
@@ -356,6 +396,9 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Project Planning", "Lean Operations", "Manufacturing Launch"],
     summary:
       "Supported the launch of a new BMW model's paint shop, coordinating a large manufacturing workforce, quality-control systems, onboarding procedures, and production milestones in a high-stakes automotive environment.",
+    homepage: [],
+    cta: "View Case Study →",
+    featured: false,
     challenge: [
       "A new-model paint shop launch had to come online while coordinating hundreds of employees, quality expectations, onboarding, and production milestones.",
       "The work required structured planning, Lean process support, and regular risk visibility for leadership—capabilities distinct from running a campus operation or implementing Workspace.",
@@ -432,3 +475,5 @@ export const caseStudies: CaseStudy[] = [
 
 export const getCaseStudy = (slug: string) =>
   caseStudies.find((study) => study.slug === slug);
+
+export const featuredWork = caseStudies.filter((study) => study.featured);

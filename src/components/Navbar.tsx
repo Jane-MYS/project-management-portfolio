@@ -22,6 +22,9 @@ const Navbar = () => {
     if (to === "/#work") {
       return location.pathname.startsWith("/work") || location.hash === "#work";
     }
+    if (to === "/research") {
+      return location.pathname === "/research" || location.hash === "#research";
+    }
     return location.pathname === to;
   };
 
