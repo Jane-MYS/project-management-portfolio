@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { contact, site } from "@/data/site";
 
 const ContactPreview = () => (
@@ -14,9 +13,6 @@ const ContactPreview = () => (
         <a href={`mailto:${site.email}`} className="hover:underline">
           Email
         </a>
-        <Link to="/resume" className="hover:underline">
-          Resume
-        </Link>
       </div>
     </div>
   </section>

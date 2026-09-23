@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 import { contact, site } from "@/data/site";
 
@@ -26,9 +25,6 @@ const Contact = () => {
             <a href={`mailto:${site.email}`} className="hover:underline">
               Email
             </a>
-            <Link to="/resume" className="hover:underline">
-              Resume
-            </Link>
           </div>
         </div>
       </section>

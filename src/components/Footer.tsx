@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
 import { site } from "@/data/site";
 
@@ -28,12 +27,6 @@ const Footer = () => {
           >
             <Mail className="h-5 w-5" />
           </a>
-          <Link
-            to="/resume"
-            className="text-sm text-muted-foreground hover:text-primary px-2"
-          >
-            Resume
-          </Link>
         </div>
       </div>
     </footer>

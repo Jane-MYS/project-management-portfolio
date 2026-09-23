@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Download } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import { resume, site } from "@/data/site";
 
@@ -12,21 +11,11 @@ const Resume = () => {
     <PageShell>
       <section className="pt-32 pb-24 px-6 md:px-10">
         <div className="max-w-3xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
-            <div>
-              <h1 className="text-3xl md:text-5xl font-medium tracking-tight mb-3">
-                Resume
-              </h1>
-              <p className="text-muted-foreground">{site.positioning}</p>
-            </div>
-            <button
-              type="button"
-              onClick={() => window.print()}
-              className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 print:hidden whitespace-nowrap shrink-0"
-            >
-              Download Resume
-              <Download className="h-4 w-4" />
-            </button>
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-5xl font-medium tracking-tight mb-3">
+              Resume
+            </h1>
+            <p className="text-muted-foreground">{site.positioning}</p>
           </div>
 
           <section className="mb-12">

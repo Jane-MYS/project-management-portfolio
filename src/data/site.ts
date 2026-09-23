@@ -1,7 +1,7 @@
 export const site = {
   name: "Jane Shi",
-  email: "mengyishi9@gmail.com",
-  linkedin: "https://www.linkedin.com/in/jane-shi-m-a-pmp-46a418153",
+  email: "shi.mengy@northeastern.edu",
+  linkedin: "https://www.linkedin.com/in/jane-shi-ed-d-pmp-46a418153",
   github: "https://github.com/Jane-MYS",
   positioning:
     "Program Operations · Project Management · Systems & Process Improvement",
